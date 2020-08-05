@@ -1,0 +1,10 @@
+@model IEnumerable<PizzaStore.Domain.Models.PizzaModel>
+<h2>Pizza list</h2>
+<ul>
+    @foreach (var p in @ViewBag.PizzaList)
+    {
+        <li>
+            @p
+        </li>
+    }
+</ul>

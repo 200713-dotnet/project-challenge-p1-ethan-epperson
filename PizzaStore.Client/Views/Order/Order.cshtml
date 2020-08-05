@@ -1,0 +1,34 @@
+@model PizzaStore.Client.Models.PizzaViewModel
+
+@*
+<form action="order/placeorder" method="post">
+    @foreach (var crust in @Model.crust)
+    {
+        <input type="radio" name="crust" value="@crust.Name">
+        
+    }
+</form>
+*@
+
+@using(Html.BeginForm("PlaceOrder", "Order",null,FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+    foreach (var crust in Model.Crusts)
+    {
+        @Html.RadioButtonFor(m => m.Crust, crust.Name);
+        @Html.DisplayFor(m => m.Crust);
+        @Html.ValidationMessageFor(m => m.Crust)
+    }
+
+    @Html.DropDownListFor(m => m.Sizes, new SelectList(Model.Sizes));
+
+    foreach (var topping in Model.Toppings)
+    {
+        @Html.CheckBoxFor(m => m.SelectedTopping, new { name = "SelectedToppng", value = topping});        
+    }
+    <button type="submit">Place order</button>
+}
+
+@*Linking*@
+<a href="/user/index">user homepage</a>
+

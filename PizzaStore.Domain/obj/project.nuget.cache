@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pZp1o0kOVqHv9X0yhIpWEwHzUW0gpTTJBNvC3OoOqwflf0ojLI41wMJwTt0iGeK5qZWu8OIs3MvTw1SxpJDmFQ==",
+  "success": true,
+  "projectFilePath": "/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Domain/PizzaStore.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/ethan/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/ethan/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

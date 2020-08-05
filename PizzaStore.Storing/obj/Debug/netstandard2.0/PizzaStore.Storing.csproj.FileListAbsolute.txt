@@ -1,0 +1,12 @@
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/bin/Debug/netstandard2.0/PizzaStore.Storing.deps.json
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/bin/Debug/netstandard2.0/PizzaStore.Storing.dll
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/bin/Debug/netstandard2.0/PizzaStore.Storing.pdb
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/bin/Debug/netstandard2.0/PizzaStore.Domain.dll
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/bin/Debug/netstandard2.0/PizzaStore.Domain.pdb
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.csprojAssemblyReference.cache
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.AssemblyInfoInputs.cache
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.AssemblyInfo.cs
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.csproj.CoreCompileInputs.cache
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.csproj.CopyComplete
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.dll
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Storing/obj/Debug/netstandard2.0/PizzaStore.Storing.pdb
