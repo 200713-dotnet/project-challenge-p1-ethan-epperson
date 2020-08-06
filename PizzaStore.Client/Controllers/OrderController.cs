@@ -28,14 +28,14 @@ namespace PizzaStore.Client.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public IActionResult PlaceOrder(PizzaViewModel pizzaViewModel)
         {
             if(ModelState.IsValid)
             {
                 var p = new PizzaFactory();
                 //repository.Create(pizzaViewModel);
-                return View("User");
+                return View();/////////////////////////make a new view model or something.
             }
             else
             {

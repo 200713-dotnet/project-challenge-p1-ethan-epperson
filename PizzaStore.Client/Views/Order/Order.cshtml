@@ -1,15 +1,42 @@
 @model PizzaStore.Client.Models.PizzaViewModel
 
-@*
-<form action="order/placeorder" method="post">
-    @foreach (var crust in @Model.crust)
-    {
-        <input type="radio" name="crust" value="@crust.Name">
-        
-    }
-</form>
-*@
+@* HTML WAY *@
+<form action="/order/placeorder" method="post">
+  @foreach (var crust in @Model.Crusts)
+  {
+    <input type="radio" name="crust" id="crust" value="@crust.Name" data-val="true" data-val-required="Needed">
+    <label for="crust">@crust.Name</label>
+   
+  }
+  <p></p>
+  @Html.ValidationMessageFor(m => m.Crust)
+  <p></p>
 
+  <select name="size" id="">
+    @foreach (var size in @Model.Sizes)
+    {
+      <option value="@size.Name">@size.Name</option>
+    }
+  </select>
+  <p></p>
+  @Html.ValidationMessageFor(m => m.Size)
+  <p></p>
+
+  @foreach (var topping in @Model.Toppings)
+  {
+    <input type="checkbox" name="selectedtoppings" id="selectedtoppings" value="@topping.Name">
+    <label for="selectedtoppings">@topping.Name</label>
+    
+  }
+  <p></p>
+  @Html.ValidationMessageFor(m => m.SelectedToppings)
+  <p></p>
+
+  <input type="submit" value="place order">
+  <!--<button type="submit">testing</button>      It doesn't look like I need both this line and the line above this -->
+</form>
+
+@* Html helper way
 @using(Html.BeginForm("PlaceOrder", "Order",null,FormMethod.Post))
 {
     @Html.AntiForgeryToken();
@@ -22,12 +49,14 @@
 
     @Html.DropDownListFor(m => m.Sizes, new SelectList(Model.Sizes));
 
-    foreach (var topping in Model.Toppings)
+    foreach (var topping in Model.SelectedToppings2)
     {
-        @Html.CheckBoxFor(m => m.SelectedTopping, new { name = "SelectedToppng", value = topping});        
+        @Html.CheckBoxFor(m => m.IsSelected, new { name = "SelectedToppng2", value = topping.Text});
+        @Html.HiddenFor(m => m.SelectedToppings2)        
     }
     <button type="submit">Place order</button>
 }
+*@
 
 @*Linking*@
 <a href="/user/index">user homepage</a>
