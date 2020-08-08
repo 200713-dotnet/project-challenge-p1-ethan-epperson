@@ -9,8 +9,10 @@ using PizzaStore.Client.Models;
 
 namespace PizzaStore.Client.Controllers
 {
+    //[Route("Home/Index")]
     public class HomeController : Controller
     {
+        
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -27,11 +29,6 @@ namespace PizzaStore.Client.Controllers
         {
             return View();
         }
-
-        //public IActionResult Order()///////////////////////////////
-        //{
-        //    return View("order", new PizzaViewModel());
-        //}
 
         
 

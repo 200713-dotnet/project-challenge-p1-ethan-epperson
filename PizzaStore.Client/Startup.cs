@@ -30,12 +30,19 @@ namespace PizzaStore.Client
             {
               options.UseSqlServer(Configuration.GetConnectionString("mssql"));
             });
-            //services.AddCors(options => 
-            //options.AddDefaultPolicy(poly =>
-            //{
-            //poli.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-            //});
+            /*services.AddCors(options => 
+            {
+                options.AddDefaultPolicy(poly =>
+                {
+                    poli.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
 
+                options.AddPolicy("private", poli =>
+                {
+                    poli.WithOrigins("microsoft.com").WithMethods("get","post").WithHeaders("content-type");
+                });
+            });
+            */
 
         }
 
@@ -61,14 +68,14 @@ namespace PizzaStore.Client
             app.UseAuthorization();
 
 
-// /* default to global routing
+ // default to global routing
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-// */ if I want to use controller routing comment this out
+ //if I want to use controller routing comment this out
         }
     }
 }

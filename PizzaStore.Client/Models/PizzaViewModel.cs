@@ -13,9 +13,9 @@ namespace PizzaStore.Client.Models
 
 
     [Required(ErrorMessage = "Please select a Crust")]
-    public CrustModel Crust {get; set;}
+    public string Crust {get; set;}
     [Required]
-    public SizeModel Size {get; set;}
+    public string Size {get; set;}
     [Required]
     [MaxLength(5)]
     [MinLength(2)]
@@ -35,6 +35,7 @@ namespace PizzaStore.Client.Models
       ,new ToppingModel(){ Name = "Ham"},     new ToppingModel(){ Name = "Pineapple"}};
       //SelectedToppings = new List<CheckBoxTopping>();
     }
+
   }
 
   public class CheckBoxTopping : ToppingModel

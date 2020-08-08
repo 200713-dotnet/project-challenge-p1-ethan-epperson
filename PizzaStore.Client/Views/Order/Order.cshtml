@@ -2,14 +2,18 @@
 
 @* HTML WAY *@
 <form action="/order/placeorder" method="post">
+
   @foreach (var crust in @Model.Crusts)
   {
     <input type="radio" name="crust" id="crust" value="@crust.Name" data-val="true" data-val-required="Needed">
     <label for="crust">@crust.Name</label>
    
   }
-  <p></p>
+  <p>
   @Html.ValidationMessageFor(m => m.Crust)
+  </p>
+  
+
   <p></p>
 
   <select name="size" id="">
@@ -17,9 +21,11 @@
     {
       <option value="@size.Name">@size.Name</option>
     }
-  </select>
-  <p></p>
+  <p>
   @Html.ValidationMessageFor(m => m.Size)
+  </p>
+  </select>
+  
   <p></p>
 
   @foreach (var topping in @Model.Toppings)
@@ -28,12 +34,13 @@
     <label for="selectedtoppings">@topping.Name</label>
     
   }
-  <p></p>
+  <p>
   @Html.ValidationMessageFor(m => m.SelectedToppings)
+  </p>
   <p></p>
 
   <input type="submit" value="place order">
-  <!--<button type="submit">testing</button>      It doesn't look like I need both this line and the line above this -->
+  <!--<button type="submit">testing</button>    It doesn't look like I need both this line and the line above this -->
 </form>
 
 @* Html helper way

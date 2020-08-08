@@ -11,7 +11,7 @@ using PizzaStore.Storing;
 
 namespace PizzaStore.Client.Controllers
 {
-    //[Route("/controller]")] //can't use this with the global routing
+    //[Route("/[controller]/[action]")] //can't use this with the global routing
     //[EnableCors("private")]
     public class OrderController : Controller
     {
@@ -28,18 +28,22 @@ namespace PizzaStore.Client.Controllers
         }
 
         [HttpPost]
+        
         //[ValidateAntiForgeryToken]
         public IActionResult PlaceOrder(PizzaViewModel pizzaViewModel)
         {
+            
             if(ModelState.IsValid)
             {
                 var p = new PizzaFactory();
+                
                 //repository.Create(pizzaViewModel);
-                return View();/////////////////////////make a new view model or something.
+                return View("~/Views/Pizza/Home2.cshtml");
             }
             else
             {
                 return View("Order", pizzaViewModel);
+                
             }
             
         }

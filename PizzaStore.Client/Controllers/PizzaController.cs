@@ -25,7 +25,7 @@ namespace PizzaStore.Client.Controllers
             ViewBag.PizzaList = _db.Pizzas.ToList(); //dynamic object
             //ViewData["PizzaList"] = _db.Pizzas.ToList();
             //TempData["PizzaList"] = _db.Pizzas.ToList();
-            return View("Home");
+            return View("Home2", _db.Pizzas.ToList());
 
         }
         [HttpGet("{id}")]

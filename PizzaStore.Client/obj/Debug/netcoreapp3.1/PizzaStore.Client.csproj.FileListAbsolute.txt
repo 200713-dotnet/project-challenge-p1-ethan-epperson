@@ -8,7 +8,6 @@
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/PizzaStore.Client.TagHelpers.input.cache
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/PizzaStore.Client.TagHelpers.output.cache
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/PizzaStore.Client.RazorCoreGenerate.cache
-/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Home.cshtml.g.cs
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/Order.cshtml.g.cs
@@ -75,3 +74,6 @@
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/staticwebassets/PizzaStore.Client.StaticWebAssets.Manifest.cache
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/staticwebassets/PizzaStore.Client.StaticWebAssets.xml
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/PizzaStore.Client.genruntimeconfig.cache
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Store/Store.cshtml.g.cs
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Pizza/Home2.cshtml.g.cs
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/User.cshtml.g.cs
