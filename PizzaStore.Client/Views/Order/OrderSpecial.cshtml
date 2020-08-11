@@ -1,0 +1,16 @@
+@model PizzaStore.Client.Models.PizzaSpecialViewModel
+
+<h1>Choose your pizza</h1>
+
+<form action="/order/placeorderspecial" method="post">
+
+  <select name="pizzaChoice" id="">
+  <option pizzaChoice="Pepperoni and Sausage">Medium Pepperoni and Sausage</option>
+  <option pizzaChoice="Bacon and Ham">Large Bacon and Ham</option>
+  <p>
+  @Html.ValidationMessageFor(m => m.pizzaChoice)
+  </p>
+  </select>
+
+  <input type="submit" value="place order">
+</form>

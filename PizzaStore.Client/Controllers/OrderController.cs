@@ -15,7 +15,7 @@ namespace PizzaStore.Client.Controllers
     //[EnableCors("private")]
     public class OrderController : Controller
     {
-        private readonly PizzaStoreDbContext _db;
+        private PizzaStoreDbContext _db;
 
         public OrderController(PizzaStoreDbContext dbContext)
         {
@@ -27,18 +27,37 @@ namespace PizzaStore.Client.Controllers
             return View("Order", new PizzaViewModel());
         }
 
+        public IActionResult Special()
+        {
+            return View("OrderSpecial", new PizzaSpecialViewModel());
+        }
+
         [HttpPost]
-        
+
+        public IActionResult PlaceSpecialty(PizzaSpecialViewModel pizzaSpecialView)
+        {
+            if(ModelState.IsValid)
+            {
+                return Redirect("/user/hello");
+            }
+            else
+            {
+                return View("OrderSpecial", pizzaSpecialView);
+            }
+            
+          
+        }
         //[ValidateAntiForgeryToken]
         public IActionResult PlaceOrder(PizzaViewModel pizzaViewModel)
         {
             
             if(ModelState.IsValid)
             {
-                var p = new PizzaFactory();
+                var c = pizzaViewModel.AddCrust();
+                var s = pizzaViewModel.AddSize();
+                List<ToppingModel> t = pizzaViewModel.AddToppings();
                 
-                //repository.Create(pizzaViewModel);
-                return View("~/Views/Pizza/Home2.cshtml");
+                return Redirect("/user/hello");
             }
             else
             {
@@ -47,5 +66,6 @@ namespace PizzaStore.Client.Controllers
             }
             
         }
+
     }
 }

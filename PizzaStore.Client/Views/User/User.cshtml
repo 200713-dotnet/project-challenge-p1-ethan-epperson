@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "User Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To The User Page!</h1>
+    <p><a href="https://localhost:5001/order/home">Custom Order</a>.</p>
+    <p><a href="https://localhost:5001/order/special">Special Order</a></p>
+    <p>View Order</p>
+
+    <form action="/user/reviewOrder" method="post">
+
+      <input type="submit" value="View order">
+ 
+    </form>
+
+</div>

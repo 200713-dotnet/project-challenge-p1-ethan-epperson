@@ -76,4 +76,5 @@
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/PizzaStore.Client.genruntimeconfig.cache
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Store/Store.cshtml.g.cs
 /home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Pizza/Home2.cshtml.g.cs
-/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/User.cshtml.g.cs
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/User/User.cshtml.g.cs
+/home/ethan/revanture/week_4/training-code-week3/PizzaStore/PizzaStore.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/OrderSpecial.cshtml.g.cs

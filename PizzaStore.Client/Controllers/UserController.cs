@@ -11,6 +11,17 @@ namespace PizzaStore.Client.Controllers
 {
     public class UserController : Controller
     {
+        public IActionResult Hello()
+        {
+            return View("user");
+        }
+
+        [HttpPost]
+        public IActionResult ReviewOrder()
+        {
+            return Redirect("/pizza/get");
+        }
+
 
     }
 }
