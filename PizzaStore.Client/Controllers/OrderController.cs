@@ -56,7 +56,10 @@ namespace PizzaStore.Client.Controllers
                 var c = pizzaViewModel.AddCrust();
                 var s = pizzaViewModel.AddSize();
                 List<ToppingModel> t = pizzaViewModel.AddToppings();
-                
+                var p = new PizzaModel();
+                p.Crust = c;
+                p.Size = s;
+                p.Toppings = t;
                 return Redirect("/user/hello");
             }
             else
