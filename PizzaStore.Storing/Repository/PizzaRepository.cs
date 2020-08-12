@@ -12,12 +12,26 @@ namespace PizzaStore.Storing.Repository
         {
             _db = db;
         }
-
-        public void CreatePizza()
+/*
+        public Pizza CreatePizza(PizzaModel p)
         {
+            
+            Pizza pi = new Pizza();
+            if (p.Crust == "Thin" )
+            {
+                pi.CrustId = 1;
+            }
+            else if (p.Size == "Large")
+            {
+                pi.SizeId = 1;
+            }
+            //pi.PizzaId = 1;
+            
+            return pi;
+            
 
         }
-
+        */
 
 
     }
